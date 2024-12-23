@@ -1,5 +1,4 @@
 const express = require('express');
-// const { connect, get } = require('mongoose');
 const connectDB = require('./db-connect');
 require('dotenv').config();
 const studentModel = require('./models/students');
@@ -9,7 +8,6 @@ const PORT = process.env.PORT;
 
 const app = express();
 connectDB();
-
 app.use(express.json());
 
 // app.get('/', async (req, res) => {
